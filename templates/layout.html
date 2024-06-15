@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"  />
+    {% block css_files %}{% endblock %}  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />  
+    <title> CourseApp  |  {% block  page_title %}{% endblock %}  </title>
+</head>
+
+
+<body>
+   <div class="bg-warning"> <marquee> <h6 class="fa-solid fa-screwdriver-wrench">.  TEST YAYINI.    Lütfen vericinizin ayarları ile oynamayınız..    ¯\_(ツ)_/¯   .  |  .   MAÇ SONUÇLARI:   Galatasaray - Mersin İdman Yurdu 0-12  |  ŞİMDİDE GÜNDEM:   3. Dünya Savaşı çıkacak mı?     Az sonra..     |   Uzmanlar İstanbul depremi hakkında konuştu.   Astrolog Astro konu hakkında ayrıntılı bilgi verdi..   .</h6></marquee></div>
+    <!--Navbar-->
+    {% include 'partials/_nav.html' %}
+    
+    {% block content %}{% endblock  %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+    {% block js_files %}   {% endblock %}
+</body>
+</html>

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block css_files %}    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />  
+{% endblock %}
+
+{% block  page_title %}Kurslar Anasayfası{% endblock %}
+
+{% block content %}
+        <div class="container mt-3">
+                <div class="row">
+                        <!--Menu-->
+                <div class="col-3  bg-success" style="border:solid">
+
+                    {% include 'courses/partials/_categories.html' %}
+               
+         
+               
+                       </div>
+        
+                <div class="col-9 bg-secondary" style="border:dashed">
+                <!--Content-->
+                <h1>Kurslar anasayfa</h1>
+
+                        {% for course  in courses %} 
+                        <div class="card mb-3">
+                                <div class="row">
+
+                                        <div class="col-3">
+                                                <img class = "img-fluid rounded-start" src="{{course.imageUrl}}" alt="course.title" class="src">
+                                        </div>
+
+                                        <div class="col-9">
+                                                {% include 'courses/partials/_course.html' %}
+
+                                        </div>
+
+
+                                </div>
+                        </div>
+                        {% endfor %}
+
+
+
+                    </div>
+                </div>
+        </div>
+{% endblock  %}
+
+{% block js_files %}   {% endblock %}
+
+
+
