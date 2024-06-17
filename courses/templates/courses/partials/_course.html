@@ -1,6 +1,6 @@
 <div class="card mb-3">
     <div class="row">
-        <div class="col-4">
+        <div class="col-3">
             <img
                 class="img-fluid rounded-start"
                 src="{{course.imageUrl}}"
@@ -9,10 +9,19 @@
             />
         </div>
 
-        <div class="col-8">
+        <div class="col-9">
             <div class="card-body">
                 <h5 class="card-title">{{course.title}}</h5>
                 <p class="card-text">{{course.description}}</p>
+                <p>
+                    {% if course.isUpdated %} 
+                        <span class="badge bg-success">Yakında güncellendi</span>
+                        {% else %}
+                        <span class="badge bg-warning">Güncelleme bekliyor</span>
+
+                    {% endif %}
+
+                </p>
             </div>
         </div>
     </div>

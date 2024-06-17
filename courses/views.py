@@ -31,7 +31,8 @@ db = {
             "imageUrl": "https://img-c.udemycdn.com/course/750x422/2463492_8344_3.jpg",
             "slug": "python-kursu",
             "date": date(2024, 2, 2),
-            "isActive": False
+            "isActive": False, 
+            "isUpdated": True,
 
         },
         {
@@ -40,7 +41,8 @@ db = {
             "imageUrl": "https://img-c.udemycdn.com/course/750x422/1662526_fc1c_3.jpg",
             "slug": "web-gelistirme-kursu",
             "date": date(2024, 3, 3),
-            "isActive": True
+            "isActive": False, 
+            "isUpdated": False,
 
         },
         {
@@ -49,7 +51,8 @@ db = {
             "imageUrl": "https://img-c.udemycdn.com/course/750x422/2907528_f51f_2.jpg",
             "slug": "SQL-kursu",
             "date": date(2024, 4, 4),
-            "isActive": True
+            "isActive": True, 
+            "isUpdated": True,
 
         },
         {
@@ -58,7 +61,8 @@ db = {
             "imageUrl": "https://img-c.udemycdn.com/course/750x422/4301499_60fc.jpg",
             "slug": "django-kursu",
             "date": date(2024, 5, 5),
-            "isActive": True
+            "isActive": True, 
+            "isUpdated": True,
 
         },],
 
@@ -75,8 +79,14 @@ db = {
 
 def index(request):
 
-    kurslar = db["courses"]
+    kurslar = [course for course in db["courses"] if course["isActive"]==True]
     kategoriler = db["categories"]
+
+#    for kurs in db["courses"]:
+#         if kurs["isActive"] == True: 
+#             kurslar.append(kurs)
+
+
 
     return render(request, 'courses/index.html', {
         'categories': kategoriler,
