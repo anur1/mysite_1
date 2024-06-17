@@ -1,0 +1,6 @@
+Yapay zeka araba sürüş kiti: 	COMMA-3x
+Uyumlu araba modelleri: 	https://www.comma.ai/vehicles
+Satış adresi: 			https://comma.ai/shop/comma-3x
+Arabaya montaj klavuzu: 	https://comma.ai/setup/comma-3x
+Açık kodlu openplot yazılımı: 	https://github.com/commaai/openpilot
+Örnek kullanım: 		https://www.youtube.com/watch?v=-ulzpbLWHKQ&t=2s
