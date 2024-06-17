@@ -1,0 +1,5 @@
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "git.confirmSync": false,
