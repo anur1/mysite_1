@@ -10,6 +10,7 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media
+*.pyc
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -173,6 +174,23 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 courseapp/__pycache__/__init__.cpython-312.pyc
+courseapp/__pycache__/settings.cpython-312.pyc
+courseapp/__pycache__/urls.cpython-312.pyc
+courseapp/__pycache__/wsgi.cpython-312.pyc
+courses/__pycache__/__init__.cpython-312.pyc
+courses/__pycache__/admin.cpython-312.pyc
+courses/__pycache__/apps.cpython-312.pyc
+courses/__pycache__/models.cpython-312.pyc
+courses/__pycache__/urls.cpython-312.pyc
+courses/__pycache__/views.cpython-312.pyc
+courses/migrations/__pycache__/__init__.cpython-312.pyc
+pages/__pycache__/__init__.cpython-312.pyc
+pages/__pycache__/admin.cpython-312.pyc
+pages/__pycache__/apps.cpython-312.pyc
+pages/__pycache__/models.cpython-312.pyc
+pages/__pycache__/urls.cpython-312.pyc
+pages/__pycache__/views.cpython-312.pyc
+pages/migrations/__pycache__/__init__.cpython-312.pyc
 courseapp/__pycache__/settings.cpython-312.pyc
 courseapp/__pycache__/urls.cpython-312.pyc
 courseapp/__pycache__/wsgi.cpython-312.pyc
