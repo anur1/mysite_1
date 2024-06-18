@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -21,7 +21,7 @@ db = {
             "description": "java script kurs açıklaması",
             "imageUrl": "https://img-c.udemycdn.com/course/750x422/1258436_2dc3_4.jpg",
             "slug": "javascript-kursu",
-            "date": date(2024, 1, 1),
+            "date": datetime.now,
             "isActive": True
 
         },
