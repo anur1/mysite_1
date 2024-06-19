@@ -1,6 +1,15 @@
 {% extends "layout.html" %}
+{% load static %}
+{% block css_files %}
+        <link rel="stylesheet" href="{%static 'courses/css/style.css'%}">
+{% endblock  %}
+
 
 {% block  page_title %}Kurslar Anasayfa{% endblock %}
+
+
+
+
 
 {% block content %}
         <div class="container mt-3">
@@ -33,3 +42,6 @@
 
 
 
+{% block js_files %}
+        <script src= "{%static 'courses/js/script.js' %}"></script>
+{% endblock  %}

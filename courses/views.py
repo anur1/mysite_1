@@ -19,7 +19,7 @@ db = {
         {
             "title": "javascript kursu",
             "description": "java script kurs açıklaması",
-            "imageUrl": "https://img-c.udemycdn.com/course/750x422/1258436_2dc3_4.jpg",
+            "imageUrl": "1.jpg",
             "slug": "javascript-kursu",
             "date": datetime.now,
             "isActive": True
@@ -28,7 +28,7 @@ db = {
         {
             "title": "python kursu",
             "description": "python kurs açıklaması",
-            "imageUrl": "https://img-c.udemycdn.com/course/750x422/2463492_8344_3.jpg",
+            "imageUrl": "2.jpg",
             "slug": "python-kursu",
             "date": date(2024, 2, 2),
             "isActive": False, 
@@ -38,7 +38,7 @@ db = {
         {
             "title": "web geliştirme kursu",
             "description": "web geliştirme kurs açıklaması",
-            "imageUrl": "https://img-c.udemycdn.com/course/750x422/1662526_fc1c_3.jpg",
+            "imageUrl": "3.jpg",
             "slug": "web-gelistirme-kursu",
             "date": date(2024, 3, 3),
             "isActive": False, 
@@ -48,7 +48,7 @@ db = {
         {
             "title": "SQL kursu",
             "description": "SQL kurs açıklaması",
-            "imageUrl": "https://img-c.udemycdn.com/course/750x422/2907528_f51f_2.jpg",
+            "imageUrl": "4.jpg",
             "slug": "SQL-kursu",
             "date": date(2024, 4, 4),
             "isActive": True, 
@@ -58,7 +58,7 @@ db = {
         {
             "title": "django kursu",
             "description": "django kurs açıklaması",
-            "imageUrl": "https://img-c.udemycdn.com/course/750x422/4301499_60fc.jpg",
+            "imageUrl": "5.jpg",
             "slug": "django-kursu",
             "date": date(2024, 5, 5),
             "isActive": True, 
