@@ -7,3 +7,6 @@ class Course(models.Model):
     date = models.DateField()
     isActive = models.BooleanField()
 
+    def __str__(self):
+        return f"{self.title} {self.date}"
+
