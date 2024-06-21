@@ -2,6 +2,7 @@ from datetime import date, datetime
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import reverse
+from .models import Course
 
 data = {
     "programlama":  "programlama kategorisine ait kurs listesi",
@@ -79,7 +80,7 @@ db = {
 
 def index(request):
 
-    kurslar = [course for course in db["courses"] if course["isActive"]==True]
+    kurslar = Course.objects.filter(isActive=1)
     kategoriler = db["categories"]
 
 #    for kurs in db["courses"]:
