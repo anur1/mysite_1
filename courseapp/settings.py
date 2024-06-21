@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-yrlps@a0*%^$p*eb^*+ng0#%%4tdzrgbu&pdq-*84f153j6(k+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']  ##6Haziran2024-PythonAnywhere için eklendi
 
 
 # Application definition
