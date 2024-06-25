@@ -1,3 +1,9 @@
-body {
-    background-color: blueviolet;
+div {
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: aqua;
+    border-color: blue;
+    border:5px solid blue;
+
 }
+
