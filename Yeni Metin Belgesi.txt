@@ -1,0 +1,15 @@
+commit files or
+load files: 	github / mysite
+	
+remove old: 	rm  -r -f mysite
+
+load new:  	git clone github
+
+settings.py: 	['*']
+
+
+venv'ye tekrar girmeye gerek yok.
+
+
+
+
