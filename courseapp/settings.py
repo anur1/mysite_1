@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -118,14 +120,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+#after revision do not forget: python manage.py collectstatic
 
+
+#Application Level
 STATIC_URL = '/static/'   ##28 Haziran'da en başına / eklendi
-
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    "courses/static/courses/",  ## 28 Haziran da eklendi, silinebilir
-
+    BASE_DIR / "/static",
 ]
+
+#Global Level
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
