@@ -1,7 +1,9 @@
    {% load static  %}
-   
+   {% block css_files %}
+        <link rel="stylesheet" href="{%static 'courses/css/style.css'%}">
+{% endblock  %}
    <!--Navbar-->
-    <nav class= "navbar navbar-expand-lg" style = "background: #DFFF00; border:double " >
+    <nav class= "navbar navbar-expand-lg" style = "background: #DFFF00; border:dashed; " >
         <div class="container"> 
             <img src="{% static 'img/bjklogo.jpg' %}" alt="" width="50" height="60">
             <a href="" class="navbar-brand">Course App</a> 
